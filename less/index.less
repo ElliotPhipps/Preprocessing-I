@@ -54,37 +54,95 @@ table {
 }
 
 html, body {
+	width: 100%;
 	height: 100%;
 }
 
+@fontstyle: 'Ubuntu', sans-serif;
+@color: black;
+
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 60%;
+	font-style: @fontstyle;
+	color: @color;
+}
+
 .body-container{
-	// display: flex;
-	// max-width: 900px;
+	display: flex;
+	justify-content: center;
+	// padding: 3%;
+	font-style: @fontstyle;
+	color: @color;
 }
 
 .top-content {
-	display: flex;
-	flex-direction: column;
-	// justify-content: center;
-	border-box: 1px solid black;
-
-}
-
-.me {
+	// display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	// border: 1px solid black;
+	// margin: 20px;
+	
+	.me {
  	width: 50px;
 	height: 50px;
+	}
+
+	.team {
+		width: 120px;
+		height: 20px;
+		border-radius: 10%;
+		margin: 3%;
+	}
 }
 
-.team {
-	width: 120px;
-	height: 20px;
-	border-radius: 10%;
+hr {
+	border: 1px solid black;
 }
 
 .middle-content {
+	// display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	// border: 1px solid black;
+	// margin: 20px;
+	// p {
+	// 	// flex-wrap: wrap;
+	// }
 
+	h3 {
+		align-items: flex-end;
+		// flex-wrap: nowrap;
+		// flex-direction: row;
+	}
 }
 
 .bottom-content {
+	// display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	// border: 1px solid black;
+	// margin: 20px;
+}
+
+.contact {
+	// display: flex;
+	flex-direction: column;
+	// border: 1px solid black;
+	// margin: 20px;
+}
+
+footer {
+	// display: flex;
+	flex-direction: row;
+	// border: 1px solid black;
+	// margin: 20px;
+}
+
+@media(max-width: 500px) {
 
 }
