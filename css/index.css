@@ -134,3 +134,17 @@ html,
 body {
   height: 100%;
 }
+.top-content {
+  display: flex;
+  flex-direction: column;
+  border-box: 1px solid black;
+}
+.me {
+  width: 50px;
+  height: 50px;
+}
+.team {
+  width: 120px;
+  height: 20px;
+  border-radius: 10%;
+}
