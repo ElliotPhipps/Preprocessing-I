@@ -148,26 +148,75 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+.experience {
+  padding: 0 5%;
+  background-color: #FBFBFB;
+}
 .experience .exp {
-  align-items: center;
-  padding: 2%;
+  padding: 10% 0;
+  background-color: #E9D4B6;
+  justify-content: center;
+}
+.experience .intro {
+  padding-top: 3%;
 }
 #heading-exp {
   display: flex;
   justify-content: center;
   background-color: #E9D4B6;
-}
-.jobs {
-  display: flex;
-  border: 1px black;
-  flex-direction: column;
-  align-items: center;
+  padding: 1%;
+  margin-top: 5%;
 }
 .jobs .job {
   border: 1px black;
   padding: 3%;
   line-height: 1.6rem;
 }
+.jobs .job li {
+  list-style-type: square;
+  margin-left: 2%;
+}
 .side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #77817C;
+}
+.side nav a {
+  text-decoration: none;
+  color: #E9D4B6;
+}
+.side img {
+  width: 40%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.side .contact #contacts {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
   justify-content: center;
+  padding: 5%;
+}
+.side .education .ed {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
+  justify-content: center;
+  padding: 5%;
+}
+.side .education .education-fill {
+  padding-bottom: 10%;
+}
+.side .skillset {
+  padding-bottom: 5%;
+}
+.side .skillset #skill {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
+  justify-content: center;
+  padding: 5%;
 }
