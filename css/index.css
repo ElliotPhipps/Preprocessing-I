@@ -176,6 +176,18 @@ header {
   list-style-type: square;
   margin-left: 2%;
 }
+.github-projects .proj-heading {
+  display: flex;
+  justify-content: center;
+  background-color: #E9D4B6;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.github-projects .projects .project {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 1.6rem;
+}
 .side {
   display: flex;
   flex-direction: column;
@@ -183,15 +195,20 @@ header {
   justify-content: space-between;
   background-color: #77817C;
 }
+.side nav {
+  padding: 5%;
+  font-size: 1.6rem;
+}
 .side nav a {
   text-decoration: none;
   color: #E9D4B6;
 }
 .side img {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  padding: 10%;
 }
 .side .contact #contacts {
   display: flex;
@@ -199,6 +216,11 @@ header {
   background-color: #FBFBFB;
   justify-content: center;
   padding: 5%;
+  margin-bottom: 10%;
+}
+.side .contact ul {
+  line-height: 1.6rem;
+  margin-bottom: 25%;
 }
 .side .education .ed {
   display: flex;
@@ -206,9 +228,11 @@ header {
   background-color: #FBFBFB;
   justify-content: center;
   padding: 5%;
+  margin-bottom: 10%;
 }
 .side .education .education-fill {
-  padding-bottom: 10%;
+  margin-bottom: 15%;
+  line-height: 1.6rem;
 }
 .side .skillset {
   padding-bottom: 5%;
@@ -219,4 +243,12 @@ header {
   background-color: #FBFBFB;
   justify-content: center;
   padding: 5%;
+  margin-bottom: 10%;
+}
+.side #skills {
+  line-height: 1.6rem;
+}
+.side #skills li {
+  list-style-type: square;
+  margin-left: 2%;
 }
