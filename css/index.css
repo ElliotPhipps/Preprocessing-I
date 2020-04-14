@@ -134,6 +134,31 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Girassol';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9N.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+p,
+ul {
+  font-family: 'Girassol', cursive;
+}
 .splitscreen {
   display: flex;
 }
@@ -203,6 +228,11 @@ header {
   text-decoration: none;
   color: #E9D4B6;
 }
+@media (max-width: 500px) {
+  .side nav a {
+    font-size: 0.95rem;
+  }
+}
 .side img {
   width: 50%;
   border-radius: 50%;
@@ -221,6 +251,11 @@ header {
 .side .contact ul {
   line-height: 1.6rem;
   margin-bottom: 25%;
+}
+@media (max-width: 500px) {
+  .side .education {
+    padding: 13%;
+  }
 }
 .side .education .ed {
   display: flex;
