@@ -1,1 +1,289 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Girassol';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9N.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+p,
+ul {
+  font-family: 'Girassol', cursive;
+}
+.splitscreen {
+  display: flex;
+}
+.splitscreen .experience {
+  flex: 1;
+}
+.splitscreen .side {
+  flex: 1;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experience {
+  padding: 0 5%;
+  background-color: #FBFBFB;
+}
+.experience .exp {
+  padding: 10% 0;
+  background-color: #E9D4B6;
+  justify-content: center;
+}
+.experience .intro {
+  padding-top: 3%;
+}
+#heading-exp {
+  display: flex;
+  justify-content: center;
+  background-color: #E9D4B6;
+  padding: 1%;
+  margin-top: 5%;
+}
+.jobs .job {
+  border: 1px black;
+  padding: 3%;
+  line-height: 1.6rem;
+}
+.jobs .job li {
+  list-style-type: square;
+  margin-left: 2%;
+}
+.github-projects .proj-heading {
+  display: flex;
+  justify-content: center;
+  background-color: #E9D4B6;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.github-projects .projects .project {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 1.6rem;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #77817C;
+}
+.side nav {
+  padding: 5%;
+  font-size: 1.6rem;
+}
+.side nav a {
+  text-decoration: none;
+  color: #E9D4B6;
+}
+@media (max-width: 500px) {
+  .side nav a {
+    font-size: 0.95rem;
+  }
+}
+.side img {
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+}
+.side .contact #contacts {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
+  justify-content: center;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+.side .contact ul {
+  line-height: 1.6rem;
+  margin-bottom: 25%;
+}
+@media (max-width: 500px) {
+  .side .education {
+    padding: 13%;
+  }
+}
+.side .education .ed {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
+  justify-content: center;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+.side .education .education-fill {
+  margin-bottom: 15%;
+  line-height: 1.6rem;
+}
+.side .skillset {
+  padding-bottom: 5%;
+}
+.side .skillset #skill {
+  display: flex;
+  color: #77817C;
+  background-color: #FBFBFB;
+  justify-content: center;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+.side #skills {
+  line-height: 1.6rem;
+}
+.side #skills li {
+  list-style-type: square;
+  margin-left: 2%;
+}
